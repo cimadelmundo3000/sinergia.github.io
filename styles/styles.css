@@ -188,6 +188,7 @@ body {
   height: 100%;
   top: 0;
   right: 0;
+  vertical-align: top;
   display: inline-block;
   position: absolute;
   background-repeat: no-repeat;
@@ -970,6 +971,15 @@ body {
   background-image: url(../assets/svg/menu.svg);
 }
 
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .media .master {
+    width: calc(100% - 40px);
+  }
+
+  .caso {
+    margin: 0 3% 80px 3% !important;
+  }
+}
 @media (max-width: 1023px) {
   .onlypc {
     display: none !important;
@@ -1005,7 +1015,7 @@ body {
     text-align: center;
     margin-left: 10%;
     margin-bottom: 10px;
-    padding: 25px 0 15px 0;
+    padding: 25px 0;
   }
 
   .close {
@@ -1063,6 +1073,7 @@ body {
     height: auto;
     text-align: center;
     padding-bottom: 80px;
+    padding-top: 50px;
   }
   .seccion2 .textos {
     width: 70%;
@@ -1073,9 +1084,10 @@ body {
   }
   .seccion2 .biglogo {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     position: relative;
     background-position: center;
+    margin-top: 4%;
   }
 
   .seccion3 {
@@ -1173,14 +1185,11 @@ body {
   .seccion9 .master .contacto .dato {
     padding: 15px 20px 10px 60px;
   }
-  .seccion9 .master .contacto .dato.whatsapp {
-    margin-left: 50px;
-  }
   .seccion9 .master .escribe {
     margin-top: 50px;
   }
   .seccion9 .master .escribe input[type=submit] {
-    padding: 16px 10px 10px 10px;
+    padding: 16px 10px;
   }
   .seccion9 .master .footer {
     text-align: center;
