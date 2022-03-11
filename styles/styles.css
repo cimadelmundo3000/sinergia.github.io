@@ -979,6 +979,10 @@ body {
   .caso {
     margin: 0 3% 80px 3% !important;
   }
+
+  .seccion3 .referencia {
+    background-position: 65% center;
+  }
 }
 @media (max-width: 1023px) {
   .onlypc {
