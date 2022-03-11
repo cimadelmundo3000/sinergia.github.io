@@ -68,7 +68,7 @@ body{
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
-.header{
+.header{ 
     @extend .tr-slow;
     height: 80px;
     width: 100%;
@@ -771,7 +771,7 @@ body{
     width: 100%;
     height: fit-content;
     background-color: $color-azul;
-    padding: 80px 0 130px 0;
+    padding: 80px 0 100px 0;
 
     .master{
         text-align: center;
@@ -789,11 +789,11 @@ body{
 
     .caso{
         width: 250px;
-        height: 600px;
+        height: 500px;
         // background-color: yellow;
         display: inline-block;
         vertical-align: top;
-        margin: 0 5%;
+        margin: 0 5% 80px 5%;
         position: relative;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -822,13 +822,19 @@ body{
             }
         }
         &.c1{
-            background-image: url(../assets/png/cliente1.png);
+            background-image: url(../assets/png/caso1.png);
         }
         &.c2{
-            background-image: url(../assets/png/cliente2.png);
+            background-image: url(../assets/png/caso2.png);
         }
         &.c3{
-            background-image: url(../assets/png/cliente3.png);
+            background-image: url(../assets/png/caso3.png);
+        }
+        &.c4{
+            background-image: url(../assets/png/caso4.png);
+        }
+        &.c5{
+            background-image: url(../assets/png/caso5.png);
         }
         .deg{
             position: absolute;
