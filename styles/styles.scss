@@ -1086,6 +1086,88 @@ body{
             font-size:16px;
             color: #333;
         }
+        .enviando{
+            width: 100%;
+            color:rgb(226, 111, 34);
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            position: relative;
+            display:none;
+            // background-color: blue;
+                .lds-ellipsis {
+                display: inline-block;
+                vertical-align: middle;
+                width: 80px;
+                height: 40px;
+                position: relative;
+                // background-color: red;
+                margin-right: 10px;
+                }
+                .lds-ellipsis div {
+                position: absolute;
+                top: 33px;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background: rgb(226, 111, 34);
+                animation-timing-function: cubic-bezier(0, 1, 1, 0);
+                top:12px;
+                }
+                .lds-ellipsis div:nth-child(1) {
+                left: 8px;
+                animation: lds-ellipsis1 0.6s infinite;
+                }
+                .lds-ellipsis div:nth-child(2) {
+                left: 8px;
+                animation: lds-ellipsis2 0.6s infinite;
+                }
+                .lds-ellipsis div:nth-child(3) {
+                left: 32px;
+                animation: lds-ellipsis2 0.6s infinite;
+                }
+                .lds-ellipsis div:nth-child(4) {
+                left: 56px;
+                animation: lds-ellipsis3 0.6s infinite;
+                }
+                @keyframes lds-ellipsis1 {
+                0% {
+                transform: scale(0);
+                }
+                100% {
+                transform: scale(1);
+                }
+                }
+                @keyframes lds-ellipsis3 {
+                0% {
+                transform: scale(1);
+                }
+                100% {
+                transform: scale(0);
+                }
+                }
+                @keyframes lds-ellipsis2 {
+                0% {
+                transform: translate(0, 0);
+                }
+                100% {
+                transform: translate(24px, 0);
+                }
+                }
+        }
+        .enviado{
+            width: 100%;
+            color:$color-verde;
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            display: none;
+            span{
+                color: #FFF;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+            }
+        }
     }
     .footer{
         width: calc(20% - 21px);

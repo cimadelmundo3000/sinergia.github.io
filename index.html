@@ -226,12 +226,12 @@
         </div><form method="post" target="_self" id="form-contacto" class="escribe">
             <div class="tit">Escríbenos</div>
             <div class="tt">Nombre</div><div class="tt">Ciudad</div>
-            <input type="text" name="name" id="nombre" required="required"><input type="text" name="city" id="ciudad" required="required">
+            <input type="text" name="name" id="name" required="required"><input type="text" name="city" id="city" required="required">
             <div class="tt">Email</div><div class="tt">Teléfono</div>
             <input type="email" name="email" id="email" required="required"><input type="text" name="phone" id="phone">
             <div class="tt">¿Qué te interesa?</div><div class="tt">¿Cómo supiste de nosotros?</div>
             <select name="subject" id="subject" required="required">
-                <option value="-1" selected>Seleccione:</option>
+                <option value="" selected>Seleccione:</option>
                 <option value="E-Commerce">Producto: E-Commerce</option>
                 <option value="Catálogo">Producto: Catálogo</option>
                 <option value="APP">Desarrollo de APP Android / iOS</option>
@@ -239,7 +239,10 @@
             </select><input type="text" name="how" id="how" required="required">
             <div class="tt l">Mensaje</div>
             <textarea name="message" id="message" required="required"></textarea>
-            <input type="submit" value="ENVIAR" name="send">
+            <input type="submit" value="ENVIAR" id="send">
+            <div class="enviando" id="enviando">
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>Enviando...</div>
+            <div class="enviado" id="enviado">¡ Solicitud Enviada !<br><span>Responderemos a la brevedad posible. Gracias.</span></div>
         </form><div class="footer">
             <div class="logo"><img src="assets/png/logo-white.png" alt=""></div>
             <div class="final">

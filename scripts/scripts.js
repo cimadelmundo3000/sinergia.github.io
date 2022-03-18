@@ -62,14 +62,32 @@ $("body").delegate('#form-contacto','submit',function(event){
 
     let campos = new FormData(event.target);
     campos = Object.fromEntries(campos.entries());
-    console.log(campos)
+    $('body #send').hide();
+    $("body #enviando").show();
     $.ajax({
         type: "POST",
         url: "https://tiendasnyco.com/contact-ssd.php",
         crossDomain: true,
-        data: {campos},
+        data: campos,
     }).done(function (data) {
-        console.log(data);
+        if(data==1){
+            $("body #enviando").hide();
+            $("body #enviado").show();
+            setTimeout(() => {
+                $("body #enviado").hide();
+                $("body #send").show();
+                $('body #name').val("");
+                $("body #city").val("");
+                $("body #email").val("");
+                $("body #phone").val("");
+                $("body #subject").val("");
+                $("body #how").val("");
+                $("body #message").val("");
+            }, 5000);
+        }else{
+            $("body #enviando").hide();
+            $("body #send").show();
+        }
     }); 
 
 });
