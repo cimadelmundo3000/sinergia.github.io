@@ -62,7 +62,7 @@ $("body").delegate('#form-contacto','submit',function(event){
 
     let campos = new FormData(event.target);
     campos = Object.fromEntries(campos.entries());
-
+    console.log(campos)
     $.ajax({
         type: "POST",
         url: "https://tiendasnyco.com/contact-ssd.php",

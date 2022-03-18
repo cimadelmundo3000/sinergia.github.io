@@ -1,7 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 /*if(isset($_POST['send']) && !empty($_POST['send'])){
 
     $name = addslashes($_POST['name']);
@@ -12,9 +12,7 @@ header('Access-Control-Allow-Methods: POST');
     $how = addslashes($_POST['how']);
     $message = addslashes($_POST['message']);
 */
-    // echo 'Hola: '.$_POST['d'];
-
-    foreach($_POST as $campo => addslashes($valor)){
+    foreach($_POST as $campo => $valor){
        echo "- ". $campo ." = ". $valor;
     }
 
