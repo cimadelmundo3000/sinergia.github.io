@@ -841,6 +841,9 @@ body {
 .seccion9 .contacto .dato.whatsapp {
   background-image: url(../assets/svg/whatsapp.svg);
 }
+.seccion9 .contacto .dato.email {
+  background-image: url(../assets/svg/email.svg);
+}
 .seccion9 .contacto .dato span {
   font-size: 16px;
   font-weight: 500;
@@ -869,18 +872,22 @@ body {
 .seccion9 .escribe .tt.l {
   width: 100%;
 }
-.seccion9 .escribe input {
+.seccion9 .escribe input, .seccion9 .escribe select {
   width: calc(48% - 20px);
   margin-right: 2%;
   display: inline-block;
   background-color: #FFF;
-  padding: 10px 10px;
+  padding: 5px 10px;
   border: none;
   margin-bottom: 10px;
   outline: none;
   font-family: "Tajawal", sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+.seccion9 .escribe select {
+  width: 48%;
+  padding: 4px 10px;
 }
 .seccion9 .escribe input[type=submit] {
   width: 48%;
@@ -893,17 +900,21 @@ body {
   margin-bottom: 20px;
   outline: none;
   font-family: "Tajawal", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   float: right;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 10px;
+  background-size: 32px;
+  background-image: url(../assets/svg/send.svg);
 }
 .seccion9 .escribe input[type=submit]:hover {
   background-color: #aaed4c;
 }
 .seccion9 .escribe textarea {
   width: calc(98% - 20px);
-  height: 70px;
+  height: 50px;
   resize: none;
   display: inline-block;
   background-color: #FFF;

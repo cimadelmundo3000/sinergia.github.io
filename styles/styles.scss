@@ -33,7 +33,7 @@ time, mark, audio, video {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+    text-size-adjust: none; 
 }
 body{
     height: 100%;
@@ -994,6 +994,10 @@ body{
             {
                 background-image: url(../assets/svg/whatsapp.svg);
             }
+            &.email
+            {
+                background-image: url(../assets/svg/email.svg);
+            }
             span{
                 font-size: 16px;
                 font-weight: 500;
@@ -1026,18 +1030,22 @@ body{
                 width: 100%;
             }
         }
-        input{
+        input, select{
             width: calc(48% - 20px);
             margin-right: 2%;
             display: inline-block;
             background-color: $color-blanco;
-            padding: 10px 10px;
+            padding: 5px 10px;
             border:none;
             margin-bottom: 10px;
             outline: none;
             font-family: 'Tajawal', sans-serif;
             font-weight:500;
             font-size:16px;
+        }
+        select{
+            width: 48%;
+            padding: 4px 10px;
         }
         input[type=submit]{
             @extend .tr;
@@ -1051,17 +1059,21 @@ body{
             margin-bottom: 20px;
             outline: none;
             font-family: 'Tajawal', sans-serif;
-            font-weight:500;
+            font-weight:600;
             font-size:16px;
             float: right;
             cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: calc(100% - 15px) 10px;
+            background-size: 32px;
+            background-image: url(../assets/svg/send.svg);
             &:hover{
                 background-color: #aaed4c;
             }
         }
         textarea{
             width: calc(98% - 20px);
-            height: 70px;
+            height: 50px;
             resize: none;
             display: inline-block;
             background-color: $color-blanco;

@@ -118,7 +118,7 @@
             <div class="item zelle"></div>
             <div class="item paypal"></div>
         </div><div class="inversion">
-            <div class="precio">
+            <div class="precio" style="display: none">
                 Inversión US$ <div class="monto">350 <span>00</span></div>
             </div>
             <button class="main cta">¡Me interesa!</button>
@@ -173,7 +173,7 @@
             <div class="item zelle"></div>
             <div class="item paypal"></div>
         </div><div class="inversion">
-            <div class="precio">
+            <div class="precio" style="display: none">
                 Inversión US$ <div class="monto">250 <span>00</span></div>
             </div>
             <button class="main cta">¡Me interesa!</button>
@@ -222,25 +222,36 @@
             <div class="tit">Contáctanos</div>
             <a href="https://www.instagram.com/unasoluciondigital/" target="_blank" class="dato instagram">unasoluciondigital</a>
             <a href="https://wa.me/584124730810" target="_blank" rel="noopener noreferrer" class="dato whatsapp">(+ 58) 412 - 473.0810<span><br>¡ Atención Personalizada por WHATSAPP !</span></a>
-        </div><form action="https://app.99inbound.com/api/e/P8_bvWp_" method="POST" target="_self" class="escribe">
+            <a href="mailto:sinergia.solucionesdigitales@gmail.com" target="_blank" rel="noopener noreferrer" class="dato email">sinergia.solucionesdigitales@gmail.com</a>
+        </div><form action="https://formsubmit.co/cimadelmundo3000@gmail.com" method="POST" target="_self" class="escribe">
             <div class="tit">Escríbenos</div>
             <div class="tt">Nombre</div><div class="tt">Ciudad</div>
-            <input type="text" name="name" id="nombre"><input type="text" name="city" id="ciudad">
+            <input type="text" name="name" id="nombre" required="required"><input type="text" name="city" id="ciudad" required="required">
             <div class="tt">Email</div><div class="tt">Teléfono</div>
-            <input type="email" name="email" id="email"><input type="text" name="telefono" id="telefono">
+            <input type="email" name="email" id="email" required="required"><input type="text" name="telefono" id="telefono">
+            <div class="tt">¿Qué te interesa?</div><div class="tt">¿Cómo supiste de nosotros?</div>
+            <select name="subject" id="subject" required="required">
+                <option value="-1" selected>Seleccione:</option>
+                <option value="E-Commerce">Producto: E-Commerce</option>
+                <option value="Catálogo">Producto: Catálogo</option>
+                <option value="APP">Desarrollo de APP Android / iOS</option>
+                <option value="Otros">Otros Desarrollos</option>
+            </select><input type="text" name="how" id="how" required="required">
             <div class="tt l">Mensaje</div>
-            <textarea name="mensaje" id="mensaje"></textarea>
+            <textarea name="mensaje" id="asunto" required="required"></textarea>
             <input type="submit" value="ENVIAR">
         </form><div class="footer">
             <div class="logo"><img src="assets/png/logo-white.png" alt=""></div>
             <div class="final">
                 Sinergia. Soluciones Digitales C.A.<br>
                 J - 501681503<br><br>
-                © Derechos Reservados 2022.<br>Caracas - Venezuela.
+                © Derechos Reservados 2021 - 2022.<br>Caracas - Venezuela.
             </div>
         </div>
     </div>
 </div>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -254,6 +265,8 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+
 <script src="scripts/jquery.js"></script>
 <script src="scripts/scripts.js"></script>
 </body>
