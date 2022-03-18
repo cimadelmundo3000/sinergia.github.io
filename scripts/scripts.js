@@ -60,13 +60,14 @@ $("body").delegate('#form-contacto','submit',function(event){
     event.preventDefault();
     event.stopPropagation();
 
+    let campos = new FormData(event.target);
+    campos = Object.fromEntries(campos.entries());
+
     $.ajax({
         type: "POST",
         url: "https://tiendasnyco.com/contact-ssd.php",
         crossDomain: true,
-        data: {
-            d: 1
-        },
+        data: {campos},
     }).done(function (data) {
         console.log(data);
     }); 

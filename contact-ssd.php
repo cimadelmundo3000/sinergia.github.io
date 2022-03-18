@@ -1,4 +1,7 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+header('Access-Control-Allow-Methods: POST');
 /*if(isset($_POST['send']) && !empty($_POST['send'])){
 
     $name = addslashes($_POST['name']);
@@ -9,10 +12,11 @@
     $how = addslashes($_POST['how']);
     $message = addslashes($_POST['message']);
 */
-    echo "const vehiculo = {
-    marca: "Mitsubishi",
-    modelo: "Lancer GLX",
-};";
+    // echo 'Hola: '.$_POST['d'];
+
+    foreach($_POST as $campo => addslashes($valor)){
+       echo "- ". $campo ." = ". $valor;
+    }
 
 //}
 ?>
